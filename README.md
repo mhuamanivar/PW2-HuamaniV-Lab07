@@ -207,7 +207,7 @@ Se utiliza el sistema Windows para instalar las herramientas necesarias y crear 
 
 - Se corre el servidor y se puede ver lo siguiente
 
-    <img src="a" style="width:70%"/><br/>
+    <img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab07/main/imagenes/img1.png" style="width:70%"/><br/>
 
 <br/>
 
@@ -586,14 +586,50 @@ Se utiliza el sistema Windows para instalar las herramientas necesarias y crear 
 
 ***Creando nuevos libros en página de admin***
 
-- Se corre el servidor y se puede ver lo siguiente
+- Se va a la página del admin
 
-    <img src="a" style="width:70%"/><br/>
+    <img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab07/main/imagenes/img2.png" style="width:70%"/><br/>
+
+- Luego se da en ``add`` para añadir un libro, y colocamos los detalles importantes, se crea tres libros como ejemplo.
+
+    <img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab07/main/imagenes/img3.png" style="width:70%"/><br/>
+
+- Después se puede ver la lista de libros creados en la pagina del admin.
+
+    <img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab07/main/imagenes/img4.png" style="width:70%"/><br/>
 
 <br/>
 
 ***Viendo la página principal***
 
-- Se corre el servidor y se puede ver lo siguiente
+- Se va a la pagina ``http://127.0.0.1:8000/library/books/`` y se ve la lista de libros
 
-    <img src="a" style="width:70%"/><br/>
+    <img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab07/main/imagenes/img5.png" style="width:40%"/><br/>
+
+- Se da click a uno de ellos y se pueden ver los detalles del libro
+
+    <img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab07/main/imagenes/img6.png" style="width:70%"/><br/>
+
+- Para enviar un correo, se inserta el correo al que se desea enviar
+
+    <img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab07/main/imagenes/img7.png" style="width:70%"/><br/>
+
+- Posteriormente se puede ver la pagina que menciona que se ha enviado correctamente.
+
+    <img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab07/main/imagenes/img8.png" style="width:40%"/><br/>
+
+- Como se eligió trabajar con Mailtrap, entonces se va a la página y se puede ver que ha sido enviado correctamente el mensaje, además se ve de quien para quien va dirigido y el archivo que ha sido enviado en ``Attachments``.
+
+    <img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab07/main/imagenes/img9.png" style="width:70%"/><br/>
+
+- Por otro lado, si se quiere enviar un PDF, entonces se hace click en ``Descargar en PDF`` y le damos en guardar en la carpeta que queremos.
+
+    <img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab07/main/imagenes/img10.png" style="width:70%"/><br/>
+
+- Se confirma que ha sido guardado con el navegador.
+
+    <img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab07/main/imagenes/img11.png" style="width:40%"/><br/>
+
+- Finalmente se puede ver el archivo en formato PDF, que contiene los detalles del libro.
+
+    <img src="https://raw.githubusercontent.com/mhuamanivar/PW2-HuamaniV-Lab07/main/imagenes/img12.png" style="width:70%"/><br/>
