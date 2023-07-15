@@ -56,6 +56,8 @@
 ##
 ## ACTIVIDADES
 
+***Video y github***
+El video se muestra en flipgrid en el siguiente enlace: https://flip.com/s/Ms_fZ__6sTyz, el github es https://github.com/mhuamanivar/PW2-HuamaniV-Lab07 y el .git es el siguiente https://github.com/mhuamanivar/PW2-HuamaniV-Lab07.git.
 
 ***Creando proyecto e instalando***
 
