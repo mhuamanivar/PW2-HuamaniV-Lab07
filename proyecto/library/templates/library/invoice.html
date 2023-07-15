@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalles del libro</title>
+    <style type="text/css">
+        body {
+            font-weight: 200;
+            font-size: 14px;
+        }
+        .header {
+            font-size: 20px;
+            font-weight: 100;
+            text-align: center;
+            color: #007cae;
+        }
+        .title {
+            font-size: 22px;
+            font-weight: 100;
+            padding: 10px 20px 0px 20px;  
+        }
+        .details {
+            padding: 10px 20px 0px 20px;
+            text-align: left !important;
+        }
+        .hrItem {
+            border: none;
+            height: 1px;
+            color: #333;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class='wrapper'>
+        <div class='header'>
+            <p class='title'>Detalles del libro</p>
+        </div>
+        <div class='details'>
+            <p>Autor: {{ book.author.name }}</p>
+            <p>Editoriales: 
+            {% for publisher in book.publisher.all %}
+                {{ publisher.name }}{% if not forloop.last %}, {% endif %}
+            {% empty %}
+                Sin editoriales disponibles
+            {% endfor %}
+            </p>
+            <p>Resumen: {{ book.summary }}</p>
+            <hr class='hrItem' />
+        </div>
+    </div>
+</body>
+</html>

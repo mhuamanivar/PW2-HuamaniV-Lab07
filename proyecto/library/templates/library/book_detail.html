@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalles del libro</title>
+</head>
+<body>
+    <h1>Detalles del libro</h1>
+    <h2>{{ book.title }}</h2>
+    <p>Autor: {{ book.author.name }}</p>
+    <p>Resumen: {{ book.summary }}</p>
+    <form action="{% url 'library:send_email' book.id %}" method="POST">
+        {% csrf_token %}
+        <label for="email">Enviar por correo electrónico:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <a href="{% url 'library:generate_pdf' book.id %}">Descargar detalles del libro en PDF</a>
+
+</body>
+</html>
