@@ -46,8 +46,7 @@ def send_email(request, book_id):
         email.send()
 
         return render(request, 'library/email_sent.html')
-
-    # Si no es una solicitud POST, renderizar la página de detalles del libro
+    
     book = get_object_or_404(Book, id=book_id)
     return render(request, 'library/book_detail.html', {'book': book})
 

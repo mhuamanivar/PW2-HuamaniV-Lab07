@@ -7,6 +7,12 @@
     <h1>Detalles del libro</h1>
     <h2>{{ book.title }}</h2>
     <p>Autor: {{ book.author.name }}</p>
+    <p>Publicado por:</p>
+    <ul>
+        {% for publisher in book.publisher.all %}
+            <li>{{ publisher.name }}</li>
+        {% endfor %}
+    </ul>
     <p>Resumen: {{ book.summary }}</p>
     <form action="{% url 'library:send_email' book.id %}" method="POST">
         {% csrf_token %}
