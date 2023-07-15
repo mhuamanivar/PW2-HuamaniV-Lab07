@@ -2,7 +2,6 @@ from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.template.loader import get_template
 from django.core.mail import EmailMessage
-from io import BytesIO
 from xhtml2pdf import pisa
 from .models import Book
 
