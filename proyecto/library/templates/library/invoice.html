@@ -37,11 +37,11 @@
         </div>
         <div class='details'>
             <p>Autor: {{ book.author.name }}</p>
-            <p>Editoriales: 
+            <p>Publicado por: 
             {% for publisher in book.publisher.all %}
                 {{ publisher.name }}{% if not forloop.last %}, {% endif %}
             {% empty %}
-                Sin editoriales disponibles
+                Sin publicaciones
             {% endfor %}
             </p>
             <p>Resumen: {{ book.summary }}</p>
